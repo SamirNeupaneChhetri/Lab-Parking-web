@@ -1,11 +1,16 @@
 import React from "react";
+import Welcome from "../components/Welcome";
+import Features from "../components/Features";
+import CallToAction from "../components/CallToAction";
 
-function Home() {
+const Home = () => {
   return (
     <div>
-      <h1>Home Pages</h1>
+      <Welcome />
+      <Features />
+      <CallToAction />
     </div>
   );
-}
+};
 
 export default Home;

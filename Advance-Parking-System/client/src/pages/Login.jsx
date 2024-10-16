@@ -17,7 +17,7 @@ const Login = () => {
     try {
       const result = await api.login(email, password); // Call the login function
       setMessage(result.message); // Set success message
-      navigate("/home"); // Redirect to home route
+      navigate("/"); // Redirect to home route
     } catch (error) {
       setMessage(error.message || "Login failed. Please try again."); // Handle error message
     } finally {
